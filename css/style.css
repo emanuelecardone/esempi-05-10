@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    /*
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    */
+
+    border: 2px solid black;
+    /* box-sizing: border-box; */
+    border-top: 2px solid blue;
+    border-right: 5px solid green;
+
+   /*
+    border-width: 3px 5px; su/giù dx/sx
+    border-width: 2px 5px 5px; su dx/sx giù
+    border-width: 1px 3px 4px 6px; senso orario a partire da su
+    */
+
+    border-top-right-radius: 5px;
+    /*
+    border-radius: 5px; generico
+    */
+
+    padding: 10px;
+
+    /* 
+    Quando ci sono caratteristiche che coincidono, quella specifica che voglio cambiare deve essere scritta DOPO quella da sostituire
+    Esempio
+
+    border-color: black;
+    border-top-color: orange;
+    */
+
+    margin: 30px;
+    margin-top: 100px;
+
+    /* display: inline;  se lo uso diventa inline quindi non prende più lunghezza e larghezza o margin ma posso usare padding */
+    display: inline-block; /* risolvo il problema e posso usare un inline che mantiene larghezza e lunghezza */
+}
+
+p{
+    display: inline-block;
+}
+
+/*
+gerarchia specificità: più l'elemento è specifico più ha priorità
+style attribute - id - class 
+
+comando per disporre ad altezza equa gli inline block: 
+vertical-align: middle;
+*/
+
+#div2{
+    border: 2px solid blue;
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    text-align: center;
+    line-height: 170px;
+    background-color: red;
+}
